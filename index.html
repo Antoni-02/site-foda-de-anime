@@ -1,0 +1,250 @@
+<html><head><base href="https://example.com/"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Crunchyroll - Watch Anime Online</title>
+<style>
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #23252b;
+    color: #fff;
+}
+
+header {
+    background-color: #23252b;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #f47521;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f47521;
+}
+
+.hero {
+    background: linear-gradient(45deg, #f47521, #ff9f1c);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #fff;
+    color: #f47521;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn:hover::after {
+    width: 300px;
+    height: 300px;
+}
+
+.btn:hover {
+    background-color: #f47521;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.anime-card {
+    background-color: #2b2d35;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.anime-card:hover {
+    transform: translateY(-5px);
+}
+
+.anime-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.anime-info {
+    padding: 15px;
+}
+
+.anime-info h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.anime-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+footer {
+    background-color: #1a1b1f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(244, 117, 33, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(244, 117, 33, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(244, 117, 33, 0);
+    }
+}
+
+.btn-animated {
+    animation: pulse 2s infinite;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">Crunchyroll</a>
+                <div class="nav-links">
+                    <a href="/browse">Browse</a>
+                    <a href="/manga">Manga</a>
+                    <a href="/games">Games</a>
+                    <a href="/news">News</a>
+                    <a href="/premium" class="btn btn-animated">Try Premium</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>The World's Largest Anime Library</h1>
+                <p>Stream ad-free and enjoy the latest releases and classic titles.</p>
+                <a href="/signup" class="btn btn-animated">Start Your Free Trial</a>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Popular Anime</h2>
+            <div class="anime-grid">
+                <div class="anime-card">
+                    <img src="https://th.bing.com/th/id/OIP.5ZTNAhxLvZ8CfgYAHwBZfwHaKe?rs=1&pid=ImgDetMain" alt="Anime poster showing characters from various popular series" width="200" height="280">
+                    <div class="anime-info">
+                        <h3>Demon Slayer</h3>
+                        <p>Action, Supernatural</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="https://th.bing.com/th/id/R.e9c4e01f4a2d25c2e9976c4f61cc6f82?rik=E1F1b%2bjiNvkMFQ&pid=ImgRaw&r=0" alt="Anime poster showing characters from various popular series" width="200" height="280">
+                    <div class="anime-info">
+                        <h3>My Hero Academia</h3>
+                        <p>Superhero, Action</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="https://th.bing.com/th/id/OIP.zUwfbv9ahuI-K20Q4meKIgHaML?rs=1&pid=ImgDetMain" alt="Anime poster showing characters from various popular series" width="200" height="280">
+                    <div class="anime-info">
+                        <h3>Attack on Titan</h3>
+                        <p>Dark Fantasy, Action</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="https://th.bing.com/th/id/OIP.cGTjkPaYr6bO4ndC8mqEYwHaEK?rs=1&pid=ImgDetMain" alt="Anime poster showing characters from various popular series" width="200" height="280">
+                    <div class="anime-info">
+                        <h3>One Piece</h3>
+                        <p>Adventure, Fantasy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Crunchyroll, LLC. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const buttons = document.querySelectorAll('.btn');
+        buttons.forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                button.classList.add('btn-animated');
+            });
+            button.addEventListener('mouseleave', () => {
+                button.classList.remove('btn-animated');
+            });
+        });
+    });
+    </script>
+</body></html>
